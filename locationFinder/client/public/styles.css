@@ -1,0 +1,19 @@
+.name{
+  margin-bottom: 10px;
+}
+
+.name input {
+  display: block;
+}
+
+.age {
+  margin-bottom: 10px;
+}
+
+.firstName {
+  margin-right: 10px;
+}
+
+.location {
+  margin-bottom: 10px;
+}
