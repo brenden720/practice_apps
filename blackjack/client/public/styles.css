@@ -1,0 +1,123 @@
+.appContainer {
+  width: 1000px;
+  height: 700px;
+  border: 1px solid grey;
+  position: relative;
+  text-align: center;
+  background-color: green;
+}
+
+.playerContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(7, 146, 7);
+}
+
+.dealerContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  position: absolute;
+  top: 5px;
+  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(7, 146, 7);
+}
+
+.deckContainer {
+  width: 250px;
+  height: 100px;
+  border: 1px solid grey;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(44, 252, 44);
+}
+
+.bankrollContainer {
+  width: 250px;
+  height: 200px;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(44, 252, 44);
+}
+
+.dealButton {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  top: 320px;
+  left: 35%;
+}
+
+.hitButton {
+  width: 150px;
+  height: 29px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  margin-left: 2px;
+}
+.stayButton {
+  width: 150px;
+  height: 29px;
+  position: absolute;
+  top: 351px;
+  left: 50%;
+  margin-left: 2px;
+}
+
+.playerBustedButton {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  top: 420px;
+  left: 42.5%;
+}
+
+.dealerBustedButton {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  top: 25px;
+  left: 42.5%;
+}
+
+.gameCompleteButton {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  top: 420px;
+  left: 42.5%;
+}
+
+.playerCardCount {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 392px;
+  left: 66%;
+  margin-left: 2px;
+}
+
+.dealerCardCount {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 66%;
+  margin-left: 2px;
+}
