@@ -2,17 +2,18 @@ import React from 'react';
 
 
 // details to be added later
-class Player extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+const Player = props => {
+  const {cards} = props;
+  
+  return (
+    <div className="playerContainer">
+      <div>Player</div>
+      <div>{cards.map(card => {
+        return <span>{card + ' '}</span>;
+      })}</div>
+    </div>
 
-    };
-  }
-
-  render() {
-    return <div className="playerContainer">Player</div>;
-  }
-}
+  );
+};
 
 export default Player;

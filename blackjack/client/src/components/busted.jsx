@@ -14,7 +14,7 @@ const BustedButton = props => {
     return (
       <button type="button" className="gameCompleteButton" onClick={replay}>You win. Deal Again</button>
     );
-  } else if (dealerCount > playerCount) {
+  } else if (dealerCount > playerCount && !isDealerBusted) {
     return (
       <button type="button" className="gameCompleteButton" onClick={replay}>Dealer wins. Deal Again</button>
     );

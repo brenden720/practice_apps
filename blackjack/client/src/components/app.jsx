@@ -70,14 +70,22 @@ class App extends React.Component {
         let playerCardValue = this.getCardValue(playerCard);
         let dealerCardValue = this.getCardValue(dealerCard);
         if (typeof playerCardValue !== 'number') {
-          playerCardValue = playerCardValue[1];
+          if (playerCardValues[0] && playerCardValues[0] === 11) {
+            playerCardValue = playerCardValue[0];
+          } else {
+            playerCardValue = playerCardValue[1];
+          }
         }
         player.push(playerCard);
         playerCardValues.push(playerCardValue);
         playerCount += playerCardValue;
 
         if (typeof dealerCardValue !== 'number') {
-          dealerCardValue = dealerCardValue[1];
+          if (dealerCardValues[0] && dealerCardValues[0] === 11) {
+            dealerCardValue = dealerCardValue[0];
+          } else {
+            dealerCardValue = dealerCardValue[1];
+          }
         }
 
         dealer.push(dealerCard);

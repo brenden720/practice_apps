@@ -2,17 +2,18 @@ import React from 'react';
 
 
 // details to be added later
-class Dealer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+const Dealer = props => {
+  const { cards } = props;
 
-    };
-  }
+  return (
+    <div className="dealerContainer">
+      <div>Dealer</div>
+      <div>{cards.map(card => {
+        return <span>{card + ' '}</span>;
+      })}</div>
+    </div>
 
-  render() {
-    return <div className="dealerContainer">Dealer</div>;
-  }
-}
+  );
+};
 
 export default Dealer;
